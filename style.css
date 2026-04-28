@@ -1,0 +1,215 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background: #f6f7fb;
+}
+
+.root {
+  max-width: 750px;
+  margin: auto;
+  padding: 25px 15px;
+}
+
+.header h2 {
+  font-size: 26px;
+  font-weight: 600;
+}
+
+.header p {
+  color: #666;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+/* CARD */
+.panel {
+  background: #fff;
+  border-radius: 14px;
+  padding: 20px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+}
+
+/* OPERATION BUTTONS */
+.op-row {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.op-bubble {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  border: none;
+  background: #eef0ff;
+  font-size: 18px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.op-bubble:hover {
+  transform: scale(1.1);
+}
+
+.op-bubble.active {
+  background: #6c63ff;
+  color: #fff;
+}
+
+/* EQUATION */
+.equation-row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+/* WORD BLOCK */
+.word-chip {
+  display: flex;
+  align-items: center;
+  background: #f9f9ff;
+  border-radius: 10px;
+  padding: 6px 8px;
+  border: 1px solid #e4e6ff;
+  transition: 0.2s;
+}
+
+.word-chip:hover {
+  border-color: #6c63ff;
+}
+
+/* LETTER INPUT */
+.tile {
+  width: 36px;
+  height: 42px;
+  margin: 2px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 500;
+  transition: 0.2s;
+}
+
+.tile:focus {
+  border-color: #6c63ff;
+  box-shadow: 0 0 0 2px rgba(108, 99, 255, 0.2);
+  outline: none;
+}
+
+/* SYMBOLS */
+.symbol {
+  font-size: 22px;
+  font-weight: 600;
+  color: #888;
+}
+
+/* BUTTONS */
+.icon-btn {
+  margin-left: 6px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 14px;
+  color: #888;
+}
+
+.icon-btn:hover {
+  color: #6c63ff;
+}
+
+/* SOLVE BUTTON */
+.solve-btn {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #6c63ff, #8a84ff);
+  color: #fff;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.solve-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(108, 99, 255, 0.3);
+}
+
+.solve-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* RESULTS */
+.result-panel {
+  margin-top: 18px;
+  background: #fff;
+  border-radius: 12px;
+  padding: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.solution-item {
+  margin-bottom: 12px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+.solution-item:last-child {
+  border-bottom: none;
+}
+
+.map-tag {
+  display: inline-block;
+  background: #eef0ff;
+  color: #444;
+  padding: 4px 8px;
+  border-radius: 6px;
+  margin: 2px;
+  font-size: 12px;
+}
+
+/* MOBILE */
+@media (max-width: 500px) {
+  .tile {
+    width: 30px;
+    height: 36px;
+    font-size: 16px;
+  }
+}
+
+.action-btn {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  background: #eef0ff;
+  cursor: pointer;
+  font-size: 14px;
+  transition: 0.2s;
+}
+
+.action-btn:hover {
+  background: #dfe3ff;
+}
+
+.action-btn.danger {
+  background: #ffe5e5;
+  color: #a33;
+}
+
+.action-btn.danger:hover {
+  background: #ffcfcf;
+}
+
+
